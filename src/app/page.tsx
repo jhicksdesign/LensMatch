@@ -4,6 +4,7 @@ import PortfolioShowcase from "@/components/landing/PortfolioShowcase";
 import HowItWorks from "@/components/landing/HowItWorks";
 import FeaturedPhotographers from "@/components/landing/FeaturedPhotographers";
 import Testimonials from "@/components/landing/Testimonials";
+import ForPhotographers from "@/components/landing/ForPhotographers";
 import Link from "next/link";
 
 export default function Home() {
@@ -23,6 +24,13 @@ export default function Home() {
       <FeaturedPhotographers />
       <HowItWorks />
       <Testimonials />
+
+      {/* Cinematic divider */}
+      <div className="mx-auto max-w-xs">
+        <div className="h-[1px] bg-gradient-to-r from-transparent via-gallery-accent/20 to-transparent" />
+      </div>
+
+      <ForPhotographers />
 
       {/* Final CTA — with background image */}
       <section className="relative mx-6 mb-16 overflow-hidden rounded-2xl sm:mx-8 lg:mx-auto lg:max-w-6xl">
@@ -92,10 +100,10 @@ export default function Home() {
               Portfolio
             </Link>
             <Link
-              href="/dashboard"
+              href="/auth/signup"
               className="text-xs font-light tracking-wider text-gallery-text-muted transition-colors hover:text-gallery-text-secondary"
             >
-              For Photographers
+              Photographer Signup
             </Link>
           </div>
           <span className="text-[11px] font-light text-gallery-text-muted">

@@ -67,10 +67,16 @@ export default function Navbar() {
           ) : (
             <>
               <Link
-                href="/auth/login"
+                href="#for-photographers"
                 className="text-sm font-light tracking-wider text-gallery-text-secondary transition-colors hover:text-gallery-text"
               >
                 For Photographers
+              </Link>
+              <Link
+                href="/auth/signup"
+                className="rounded-full border border-gallery-border px-5 py-2.5 text-sm font-light tracking-wider text-gallery-text-secondary transition-all hover:border-gallery-accent/40 hover:text-gallery-accent"
+              >
+                Photographer Login
               </Link>
               <Link
                 href="/intake"
