@@ -52,9 +52,12 @@ def query(sql: str, params: tuple = (), fetch_one=False, fetch_all=False):
             cur.execute(sql, params)
             if fetch_one:
                 row = cur.fetchone()
+                conn.commit()
                 return dict(row) if row else None
             if fetch_all:
-                return [dict(r) for r in cur.fetchall()]
+                rows = cur.fetchall()
+                conn.commit()
+                return [dict(r) for r in rows]
             conn.commit()
             return True
     except Exception as e:
