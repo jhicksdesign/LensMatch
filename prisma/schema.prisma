@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Photographer {
+  id             String   @id @default(cuid())
+  name           String
+  email          String   @unique
+  bio            String?
+  styles         String[] // e.g., ["dark_moody", "bright_airy", "editorial"]
+  minBudget      Int      @default(500)
+  availableDates String[] // ISO date strings
+  portfolioUrl   String?
+  avatarUrl      String?
+  rating         Float    @default(5.0)
+  matchRadius    Int      @default(50) // miles
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  leads          Lead[]
+}
+
+model Lead {
+  id             String       @id @default(cuid())
+  clientName     String
+  clientEmail    String
+  eventType      String       // wedding, portrait, commercial, etc.
+  selectedStyles String[]     // styles the client chose
+  budget         Int
+  eventDate      String       // ISO date string
+  location       String?
+  notes          String?
+  matchScore     Float?
+  status         LeadStatus   @default(NEW)
+  photographerId String?
+  photographer   Photographer? @relation(fields: [photographerId], references: [id])
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+}
+
+enum LeadStatus {
+  NEW
+  QUALIFIED
+  CONTACTED
+  BOOKED
+  DECLINED
+}
