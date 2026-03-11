@@ -94,7 +94,7 @@ export default function HowItWorks() {
                     loading="lazy"
                   />
                   {/* Number overlay on image */}
-                  <div className="absolute bottom-4 right-4 flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-black/50 backdrop-blur-sm">
+                  <div className="absolute bottom-4 right-4 flex h-14 w-14 items-center justify-center rounded-full border border-gallery-border bg-gallery-surface/80 backdrop-blur-sm">
                     <span className="font-display text-lg font-light text-gallery-accent">
                       {step.num}
                     </span>
@@ -104,7 +104,7 @@ export default function HowItWorks() {
                     className="pointer-events-none absolute -top-10 -right-10 h-40 w-40 rounded-full"
                     style={{
                       background:
-                        "radial-gradient(circle, rgba(201,169,110,0.12) 0%, transparent 70%)",
+                        "radial-gradient(circle, rgba(166,124,61,0.12) 0%, transparent 70%)",
                       filter: "blur(20px)",
                     }}
                     aria-hidden="true"

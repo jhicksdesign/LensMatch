@@ -169,7 +169,7 @@ export default function AvailabilityStep({
                     onClick={() => onDateChange(dateStr)}
                     className={`relative flex h-10 items-center justify-center rounded-lg text-sm transition-all duration-200 ${
                       isSelected
-                        ? "bg-gallery-accent text-gallery-bg font-medium shadow-[0_0_16px_rgba(201,169,110,0.3)]"
+                        ? "bg-gallery-accent text-gallery-bg font-medium shadow-[0_0_16px_rgba(166,124,61,0.3)]"
                         : isAvailable && !isPast
                           ? "text-gallery-text hover:bg-gallery-accent/10 cursor-pointer"
                           : "text-gallery-text-muted/30 cursor-not-allowed"

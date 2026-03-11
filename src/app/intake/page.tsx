@@ -364,7 +364,7 @@ export default function IntakePage() {
                 disabled={!canProceed()}
                 className={`group flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium tracking-wider transition-all duration-300 ${
                   canProceed()
-                    ? "bg-gallery-accent text-gallery-bg hover:bg-gallery-accent-hover hover:shadow-[0_0_24px_rgba(201,169,110,0.2)]"
+                    ? "bg-gallery-accent text-gallery-bg hover:bg-gallery-accent-hover hover:shadow-[0_0_24px_rgba(166,124,61,0.2)]"
                     : "bg-gallery-border text-gallery-text-muted cursor-not-allowed"
                 }`}
               >

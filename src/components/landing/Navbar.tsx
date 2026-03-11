@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <Link href="/" className="group flex items-center gap-3">
           <div className="relative flex h-9 w-9 items-center justify-center">
-            <div className="absolute inset-0 rounded-full border border-gallery-accent/40 transition-all duration-300 group-hover:border-gallery-accent group-hover:shadow-[0_0_16px_rgba(201,169,110,0.2)]" />
+            <div className="absolute inset-0 rounded-full border border-gallery-accent/40 transition-all duration-300 group-hover:border-gallery-accent group-hover:shadow-[0_0_16px_rgba(166,124,61,0.2)]" />
             <svg
               viewBox="0 0 24 24"
               fill="none"

@@ -74,7 +74,7 @@ export default function ForPhotographers() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, transparent 0%, rgba(201,169,110,0.02) 30%, rgba(201,169,110,0.02) 70%, transparent 100%)",
+            "linear-gradient(180deg, transparent 0%, rgba(166,124,61,0.02) 30%, rgba(166,124,61,0.02) 70%, transparent 100%)",
         }}
         aria-hidden="true"
       />
@@ -188,7 +188,7 @@ export default function ForPhotographers() {
                 {/* CTA buttons */}
                 <Link
                   href="/auth/signup"
-                  className="group flex w-full items-center justify-center gap-3 rounded-xl bg-gallery-accent py-4 text-sm font-medium uppercase tracking-[0.15em] text-gallery-bg transition-all duration-300 hover:bg-gallery-accent-hover hover:shadow-[0_0_30px_rgba(201,169,110,0.2)]"
+                  className="group flex w-full items-center justify-center gap-3 rounded-xl bg-gallery-accent py-4 text-sm font-medium uppercase tracking-[0.15em] text-gallery-bg transition-all duration-300 hover:bg-gallery-accent-hover hover:shadow-[0_0_30px_rgba(166,124,61,0.2)]"
                 >
                   Create Photographer Account
                   <svg

@@ -42,7 +42,7 @@ export default function Home() {
           aria-hidden="true"
         />
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-gallery-bg/95 via-gallery-bg/80 to-gallery-bg/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-gallery-bg/90 via-gallery-bg/70 to-gallery-bg/90" />
 
         <div className="relative z-10 px-8 py-20 text-center sm:px-16 sm:py-28">
           {/* Corner accents */}
@@ -64,7 +64,7 @@ export default function Home() {
           </p>
           <Link
             href="/intake"
-            className="group inline-flex items-center gap-3 rounded-full bg-gallery-accent px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gallery-bg transition-all duration-300 hover:bg-gallery-accent-hover hover:shadow-[0_0_40px_rgba(201,169,110,0.25)]"
+            className="group inline-flex items-center gap-3 rounded-full bg-gallery-accent px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gallery-bg transition-all duration-300 hover:bg-gallery-accent-hover hover:shadow-[0_0_40px_rgba(166,124,61,0.25)]"
           >
             Begin Your Match
             <svg

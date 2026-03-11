@@ -51,7 +51,7 @@ export default function Hero() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 70% 40%, rgba(201,169,110,0.04) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 70% 40%, rgba(166,124,61,0.045) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -116,7 +116,7 @@ export default function Hero() {
           >
             <Link
               href="/intake"
-              className="group relative inline-flex items-center gap-3 rounded-full bg-gallery-accent px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gallery-bg transition-all duration-300 hover:bg-gallery-accent-hover hover:shadow-[0_0_40px_rgba(201,169,110,0.25)]"
+              className="group relative inline-flex items-center gap-3 rounded-full bg-gallery-accent px-8 py-4 text-sm font-medium uppercase tracking-[0.15em] text-gallery-bg transition-all duration-300 hover:bg-gallery-accent-hover hover:shadow-[0_0_40px_rgba(166,124,61,0.25)]"
             >
               Start Your Match
               <svg
@@ -193,8 +193,8 @@ export default function Hero() {
                 alt={HERO_IMAGES[0].alt}
                 loading="eager"
               />
-              <div className="absolute bottom-3 left-3 z-10 rounded-full bg-black/40 px-3 py-1 backdrop-blur-sm">
-                <span className="text-[10px] font-light tracking-wider text-white/80">
+              <div className="absolute bottom-3 left-3 z-10 rounded-full bg-white/80 px-3 py-1 shadow-sm backdrop-blur-sm">
+                <span className="text-[10px] font-light tracking-wider text-gallery-text">
                   {HERO_IMAGES[0].style} &middot; {HERO_IMAGES[0].photographer}
                 </span>
               </div>
@@ -234,8 +234,8 @@ export default function Hero() {
                 alt={HERO_IMAGES[4].alt}
                 loading="lazy"
               />
-              <div className="absolute bottom-2 right-2 z-10 rounded-full bg-black/40 px-2 py-0.5 backdrop-blur-sm">
-                <span className="text-[10px] font-light text-white/70">
+              <div className="absolute bottom-2 right-2 z-10 rounded-full bg-white/80 px-2 py-0.5 shadow-sm backdrop-blur-sm">
+                <span className="text-[10px] font-light text-gallery-text">
                   {HERO_IMAGES[4].style}
                 </span>
               </div>
